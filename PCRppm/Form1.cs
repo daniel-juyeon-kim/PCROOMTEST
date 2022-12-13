@@ -139,6 +139,5 @@ namespace PCRppm
         {
             label1.Text = DateTime.Now.ToShortTimeString();
         }
-        //test
     }
 }

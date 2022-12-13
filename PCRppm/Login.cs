@@ -64,8 +64,7 @@ namespace PCRppm
         {
             try
             {
-                string connectionString = "User Id=admin; Password=admin; Data Source=(DESCRIPTION =   (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))   (CONNECT_DATA =     (SERVER = DEDICATED)     (SERVICE_NAME = xe)   ) );";
-
+                string connectionString = ConnectionClass.returnConnectionString();
                 string commandString = "select USER_ID, USER_PASSWORD from USER_DATA ";
 
                 DBAdapter = new OracleDataAdapter(commandString, connectionString);
